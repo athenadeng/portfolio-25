@@ -1,0 +1,125 @@
+/* body {
+    color: #593300;
+    background-color: #FFFDF9;
+} */
+
+.main-container {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    margin: 6rem 0 10rem;
+}
+
+.hero-content {
+    width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 6rem;
+    /* font-weight: bold; */
+    font-family: 'Voltaire', sans-serif;
+    margin-bottom: 1.5rem;
+}
+
+.hero-content p {
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color: var(--secondary-text);
+    margin-bottom: 4rem;
+}
+
+.incoming {
+    /* margin-top: 40px; */
+    color: var(--secondary-text);
+}
+
+.hero-sidebar {
+    width: 35%;
+    background-color: var(--background);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.hero-sidebar p {
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: translateY(-3px);
+}
+
+/* Work Section */
+.work-section {
+    margin: 80px 0;
+}
+
+.work-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.case-studies {
+    padding: 30px 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.bottom-row {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+    
+    .hero-content, .hero-sidebar {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .case-studies {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .bottom-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .case-studies, .bottom-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .nav-links {
+        gap: 15px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+}
