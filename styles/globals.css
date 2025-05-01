@@ -8,7 +8,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Figtree', 'Gill Sans', Times, serif;
+    font-family: 'Figtree', sans-serif, 'Gill Sans', Times, serif;
+    font-weight: normal;
+    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif */
 }
 
 img, picture, video, canvas, svg {
@@ -82,6 +84,26 @@ body {
     margin-left: auto;
     margin-right: auto;
     font-size: 1.2rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: var(--title-font-size);
+    color: var(--primary-text);
+}
+
+h2 {
+    font-size: 4rem;
+    color: var(--primary-text);
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: var(--primary-text);
 }
 
 html {

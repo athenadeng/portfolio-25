@@ -1,0 +1,161 @@
+/* Case Study Layout */
+.case-study-layout {
+    margin: 3rem 3rem 3rem;
+    height: 30rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem; 
+    align-items: flex-start;
+}
+
+/* Text Column */
+.text-column {
+    flex: 0 0 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: auto; 
+}
+
+.case-study-header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.case-study-title {
+    font-size: 4rem;
+    font-family: 'Voltaire', sans-serif;
+    color: var(--primary-text);
+    /* font-weight: 700; */
+}
+
+.case-study-tagline {
+    font-size: 2rem;
+    color: var(--secondary-text);
+    font-weight: 400;
+    /* margin-top: 0; */
+}
+
+/* Image Column */
+.image-column {
+    flex: 0 0 45%; 
+    height: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: auto; 
+}
+
+.content-image {
+    height: 100%;
+    width: 100%;
+    background-color: #fff4f4;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Metadata Grid */
+.metadata-grid {
+    display: grid;
+    line-height: 1.5;
+    grid-template-columns: 50% 40%;
+    column-gap: 6rem;
+    row-gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.metadata-item h3 {
+    color: #4a2b00;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+}
+
+.metadata-item p {
+    margin: 0;
+    color: #4a2b00;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 3rem;
+}
+
+/* Section */
+.section {
+    display: flex;
+    flex-direction: column;
+}
+.section-heading {
+    font-size: 3rem;
+    color: #4a2b00;
+    font-weight: 700;
+    margin: 4rem 0 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Problem/Solution Grid */
+.problem-solution-grid {
+    display: grid;
+    line-height: 1.5;
+    grid-template-columns: 30% 60%;
+    column-gap: 6rem;
+    row-gap: 2rem;
+    margin-bottom: 1rem;
+    margin: 0 6rem;
+}
+
+.problem-solution-label {
+    color: #4a2b00;
+    font-weight: 700;
+    /* font-size: 1.17em; */
+}
+
+.problem-solution-content {
+    color: #4a2b00;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .case-study-layout {
+        flex-direction: column; 
+        gap: 1.5rem; 
+    }
+
+    .image-column {
+        order: 2; 
+    }
+
+    .text-column {
+        order: 1;
+    }
+    
+    .content-layout {
+        flex-direction: column;
+    }
+    
+    .content-image {
+        margin-left: 0;
+        margin-top: 30px;
+        /* min-height: 200px; */
+    }
+    
+    .metadata-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .info-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .info-label {
+        margin-bottom: -15px;
+    }
+}
