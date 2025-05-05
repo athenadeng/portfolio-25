@@ -271,12 +271,12 @@
                 <h2 class="section-heading">Initial State Models</h2>
                 <div class="section-content">
                     <div class="section-intro">
-                        <p>After analyzing the three applications, I found Goodreads's search bar to have 
-                            the most issues. Additionally, considering the context of Goodreads' 
-                            user base of readers, I wanted to explore redesigning the search bar 
+                        <p>After analyzing the three applications, I found Goodreads's search bar to have
+                            the most issues. Additionally, considering the context of Goodreads'
+                            user base of readers, I wanted to explore redesigning the search bar
                             to be more accessible to that user group.</p>
-                        <p>To do so, I first created two sets of state models describing the current search bar's 
-                            state changes: one for mouse input and one for keyboard input.</p>    
+                        <p>To do so, I first created two sets of state models describing the current search bar's
+                            state changes: one for mouse input and one for keyboard input.</p>
                     </div>
                     <div class="subsection">
                         <h3 class="section-subheading">Mouse State Models</h3>
@@ -293,8 +293,9 @@
                             </div>
                         </div>
                         <div class="section-intro">
-                            <p><strong>Problem: </strong>the state models are simple to the point of confusion&mdash;there 
-                                are little to no visual indicators of a state change for any action a user takes.</p> 
+                            <p><strong>Problem: </strong>the state models are simple to the point of
+                                confusion&mdash;there
+                                are little to no visual indicators of a state change for any action a user takes.</p>
                         </div>
                         <h3 class="section-subheading">Keyboard State Models</h3>
                         <div class="state-models-container">
@@ -310,7 +311,8 @@
                             </div>
                         </div>
                         <div class="section-intro">
-                            <p><strong>Problem: </strong>unable to reach any active state of the search icon using keyboard input.</p> 
+                            <p><strong>Problem: </strong>unable to reach any active state of the search icon using
+                                keyboard input.</p>
                         </div>
                     </div>
                 </div>
@@ -321,10 +323,11 @@
                 <h2 class="section-heading">Revised State Models</h2>
                 <div class="section-content">
                     <div class="section-intro">
-                        <p>Next, I created revised versions of the search bar's state models, 
-                            with the goal of fixing the problems I identified through creating 
-                            the initial state models.</p> 
-                            <p>My revisions included another set of state models for a <strong>microphone icon, aimed at increasing accessibility.</strong></p> 
+                        <p>Next, I created revised versions of the search bar's state models,
+                            with the goal of fixing the problems I identified through creating
+                            the initial state models.</p>
+                        <p>My revisions included another set of state models for a <strong>microphone icon, aimed at
+                                increasing accessibility.</strong></p>
                     </div>
                     <div class="subsection">
                         <h3 class="section-subheading">Search Box State Models</h3>
@@ -341,7 +344,9 @@
                             </div>
                         </div>
                         <div class="section-intro">
-                            <p><strong>Changes: </strong>I added more states to give clear visual indicators to users how to interact with the component. For example, I used the long hover text pop up for discoverability.</p> 
+                            <p><strong>Changes: </strong>I added more states to give clear visual indicators to users
+                                how to interact with the component. For example, I used the long hover text pop up for
+                                discoverability.</p>
                         </div>
                         <h3 class="section-subheading">Search Icon State Models</h3>
                         <div class="revised-state-models-container">
@@ -357,7 +362,8 @@
                             </div>
                         </div>
                         <div class="section-intro">
-                            <p><strong>Changes: </strong>most of the model was already simple and easy to follow&mdash;the only change was to make the active state reachable.</p> 
+                            <p><strong>Changes: </strong>most of the model was already simple and easy to
+                                follow&mdash;the only change was to make the active state reachable.</p>
                         </div>
                         <h3 class="section-subheading">Microphone Icon State Models</h3>
                         <div class="revised-state-models-container">
@@ -373,8 +379,10 @@
                             </div>
                         </div>
                         <div class="section-intro">
-                            <p><strong>Changes: </strong>these models were completely new, so I focused on balancing simplicity with clear, informative visual changes.</p> 
+                            <p><strong>Changes: </strong>these models were completely new, so I focused on balancing
+                                simplicity with clear, informative visual changes.</p>
                         </div>
+                    </div>
                 </div>
             </div>
 
@@ -383,17 +391,19 @@
                 <h2 class="section-heading">Final Redesign</h2>
                 <div class="section-content">
                     <div class="section-intro">
-                        <p>Finally, I created a final redesign of the search bar, incorporating all the changes I made 
-                            to the state models. I also added a new microphone icon to allow for voice input.</p> 
+                        <p>Finally, I created a final redesign of the search bar, incorporating all the changes I
+                            made
+                            to the state models. I also added a new microphone icon to allow for voice input.</p>
                     </div>
                     <div class="final-redesign-image-container">
                         <img src="/assets/accessible-components/redesigned-states.png"
                             alt="Final Redesign of the Goodreads Search Bar" class="final-redesign-image">
                     </div>
                     <div class="section-intro">
-                        <p><strong>Tradeoffs: </strong></p> 
-                        <p>I prioritized accessibility and visual clarity for my new design. However, this does come at 
-                            the cost of simplicity&mdash;the new design has more states and interactions, which may be overwhelming for some users or detract from memorability.</p>
+                        <p><strong>Tradeoffs: </strong> I prioritized accessibility and visual clarity for my new
+                            design. However, this does come
+                            at the cost of simplicity&mdash;the new design has more states and interactions, which may
+                            be overwhelming for some users or detract from memorability.</p>
                     </div>
                 </div>
 
@@ -403,44 +413,54 @@
             <div class="section">
                 <h2 class="section-heading">Conclusion</h2>
                 <div class="conclusion-grid">
-                    <h3 class="conclusion-label">Findings</h3>
+                    <h3 class="conclusion-label">Takeaways</h3>
                     <div class="conclusion-content">
-                        <p>While some accessibility considerations were present, most components performed only moderately well for each example, 
-                            with significant gaps—particularly in screen reader support and input flexibility. Mouse and touch inputs were clearly prioritized 
-                            across platforms, leaving users who rely on keyboard or voice input underserved. Surprisingly, 
-                            <strong>none of the search bars supported non-text (e.g. voice, image) input</strong>, and screen reader functionality in tools like VSCode was especially lacking.
+                        <p>While some accessibility considerations were present, most components performed only
+                            moderately well for each example,
+                            with significant gaps—particularly in screen reader support and input flexibility. Mouse
+                            and touch inputs were clearly prioritized
+                            across platforms, leaving users who rely on keyboard or voice input underserved.
+                            Surprisingly,
+                            <strong>none of the search bars supported non-text (e.g. voice, image) input</strong>,
+                            and screen reader functionality in tools like VSCode was especially lacking.
                         </p>
-                        <p>To address these accessibility mismatches in my design, I implemented features like a keyboard shortcut dialog and voice input support in order to accommodate a broader range of users.</p>
+                        <p>To address these accessibility mismatches in my design, I implemented features like a
+                            keyboard shortcut dialog and voice input support in order to accommodate a broader range
+                            of users.</p>
                     </div>
                     <h3 class="conclusion-label">Next Steps</h3>
                     <div class="conclusion-content">
-                        <p>This case study has definitely been an eye-opening experinece to the lack of accessibility in the digital world. I now approach my web interactions with far more awareness of these issues than I did before&mdash;and there are many issues to notice!</p>
-                        <p>Going forward, I will make an effort to focus on <strong>supporting multiple input modalities equally</strong> in my designs—mouse, touch, keyboard, voice, and screen readers—to create <strong>inclusive and efficient navigation</strong> for all users, including those with disabilities or age-related challenges.</p>
+                        <p>This case study has definitely been an eye-opening experinece to the lack of
+                            accessibility in the digital world. I now approach my web interactions with far more
+                            awareness of these issues than I did before&mdash;and there are many issues to notice!
+                        </p>
+                        <p>Going forward, I will make an effort to focus on <strong>supporting multiple input
+                                modalities equally</strong> in my designs—mouse, touch, keyboard, voice, and screen
+                            readers—to create <strong>inclusive and efficient navigation</strong> for all users,
+                            including those with disabilities or age-related challenges.</p>
                     </div>
                 </div>
-            <!-- </div> -->
+                <!-- </div> -->
+            </div>
         </div>
 
         <footer>
             <div class="footer-text">designed & coded by athena deng © 2025</div>
             <div class="footer-social">
                 <a href="https://www.linkedin.com/in/athena-deng-b4b563245/" class="linkedin">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="#4a3000">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#4a3000">
                         <path
                             d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                     </svg>
                 </a>
                 <a href="https://github.com/athenadeng" class="github">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="#4a3000">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#4a3000">
                         <path
                             d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                     </svg>
                 </a>
                 <a href="mailto:athena.k.deng@gmail.com" class="google">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="#4a3000">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#4a3000">
                         <path
                             d="M7 11v2.4h3.97c-.16 1.029-1.2 3.02-3.97 3.02-2.39 0-4.34-1.979-4.34-4.42 0-2.44 1.95-4.42 4.34-4.42 1.36 0 2.27.58 2.79 1.08l1.9-1.83c-1.22-1.14-2.8-1.83-4.69-1.83-3.87 0-7 3.13-7 7s3.13 7 7 7c4.04 0 6.721-2.84 6.721-6.84 0-.46-.051-.81-.111-1.16h-6.61zm0 0 17 2h-3v3h-2v-3h-3v-2h3v-3h2v3h3v2z"
                             fill-rule="evenodd" clip-rule="evenodd" />

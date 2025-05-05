@@ -184,6 +184,30 @@
     margin: 0 10rem;
 }
 
+.section-intro-image-container {
+    border: 1px solid var(--secondary-text);
+    border-radius: 8px;
+    padding: 1.5rem; 
+    background-color: var(--secondary-background-beige);
+    margin: 1rem 4rem;
+}
+
+.section-intro-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.section-intro-caption {
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: italic;
+    text-decoration: underline;
+    margin-bottom: 2rem;
+    color: var(--primary-text);
+}
+
 .section ul {
     /* list-style-type: disc; */
     margin-left: 2rem;
@@ -227,6 +251,31 @@
     margin-left: 12rem;
 }
 
+/* Section Table */
+.section-table {
+    width: 70%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.section-table-header {
+    background-color: var(--secondary-background-beige);
+    font-size: 1.5rem;
+    color: var(--primary-text);
+    padding: 1.5rem 2rem;
+    text-align: left;
+    border: 1px solid var(--secondary-text);
+}
+
+.section-table-cell {
+    /* font-size: 1.5rem; */
+    /* background-color: var(--secondary-background-beige); */
+    line-height: 1.5;
+    color: var(--primary-text);
+    padding: 2rem;
+    border: 1px solid #e0e0e0;
+    vertical-align: top;
+}
 
 /* Problem/Solution Grid */
 .problem-solution-grid {
@@ -240,14 +289,13 @@
 }
 
 .problem-solution-label {
-    color: #4a2b00;
     font-weight: 700;
     /* font-size: 1.17em; */
 }
 
-.problem-solution-content {
+/* .problem-solution-content {
     color: #4a2b00;
-}
+} */
 
 /* Conclusion */
 .conclusion-grid {
@@ -266,6 +314,6 @@
     /* font-size: 1.17em; */
 }
 
-.conclusion-content {
+/* .conclusion-content {
     color: #4a2b00;
-}
+} */

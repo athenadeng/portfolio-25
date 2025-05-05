@@ -2,21 +2,6 @@
     background-color: var(--partiful-secondary-background);
 }
 
-.section-intro-image-container {
-    border: 1px solid var(--secondary-text);
-    border-radius: 8px;
-    padding: 1.5rem; 
-    background-color: var(--secondary-background-beige);
-    margin: 1rem 4rem;
-}
-
-.section-intro-image {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
 .section-critique-and-feedback {
     margin-left: 2rem;
 }
@@ -55,6 +40,7 @@
     text-align: center;
     font-size: 1.2rem;
     font-style: italic;
+    text-decoration: underline;
     color: var(--primary-text);
 }
 
@@ -78,7 +64,7 @@
     margin: 2rem 0;
 }
 
-.before-after-table {
+/* .before-after-table {
     width: 70%;
     border-collapse: collapse;
     margin: 0 auto;
@@ -94,11 +80,9 @@
 }
 
 .before-after-cell {
-    /* font-size: 1.5rem; */
-    /* background-color: var(--secondary-background-beige); */
     line-height: 1.5;
     color: var(--primary-text);
     padding: 2rem;
     border: 1px solid #e0e0e0;
     vertical-align: top;
-}
+} */
