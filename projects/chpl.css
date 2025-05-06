@@ -53,4 +53,6 @@
 
 .final-redesign-button a {
     color: var(--primary-text);
+    text-decoration: none;
+    font-weight: 700;
 }
