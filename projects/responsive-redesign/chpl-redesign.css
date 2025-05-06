@@ -488,7 +488,7 @@ header {
     position: relative;
     width: 100%;
     height: 500px;
-    background-image: url('/assets/chpl-redesign/chpl-background.png');
+    background-image: url('../../assets/chpl-redesign/chpl-background.png');
     background-size: cover;
     background-position: center;
     display: flex;
