@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clarendon Hills Public Library</title>
+    <link rel="stylesheet" href="chpl-redesign.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <!-- Desktop Nav -->
+        <div class="navbar-content">
+            <div class="logo-container">
+                <a href="/">
+                    <img src="/assets/chpl-redesign/chpl-logo-1.png" alt="Clarendon Hills Public Library Logo"
+                        class="logo">
+                </a>
+            </div>
+
+            <div class="nav-content">
+                <div class="top-nav">
+                    <ul class="top-nav-links">
+                        <li><a href="/account">
+                                <img src="/assets/chpl-redesign/profile-icon.png" alt="Profile Icon"
+                                    class="profile-icon">
+                                Account
+                            </a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/catalog">Catalog</a></li>
+                        <li><a href="/hours">Hours</a></li>
+                    </ul>
+
+                    <div class="search-container desktop-search">
+                        <div class="catalog-dropdown">
+                            <span>Catalog</span>
+                        </div>
+                        <div class="search-form">
+                            <input type="text" placeholder="Search for books, movies, etc." aria-label="Search">
+                            <button type="submit" class="search-button">Search</button>
+                        </div>
+                    </div>
+                </div>
+
+                <nav class="main-nav">
+                    <div class="main-nav-links-container">
+                        <ul class="main-nav-links">
+                            <li><a href="/using">Using the Library</a></li>
+                            <li><a href="/tech">Technology & Research</a></li>
+                            <li><a href="/programs">Programs</a></li>
+                            <li><a href="/about">About Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="audience-nav-links-container">
+                        <ul class="audience-nav-links">
+                            <li><a href="/kids">Kids</a></li>
+                            <li><a href="/teens">Teens</a></li>
+                            <li><a href="/adults">Adults</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- Mobile Nav -->
+            <div class="mobile-nav-controls">
+                <a href="/account" class="mobile-account-link">
+                    <img src="/assets/chpl-redesign/profile-icon.png" alt="Profile Icon" class="profile-icon">
+                </a>
+                <button class="hamburger-menu" aria-label="Menu">
+                    <img src="/assets/chpl-redesign/hamburger-menu.png" alt="Profile Icon" class="profile-icon">
+                </button>
+            </div>
+
+            <!-- Mobile Menu Drawer (hidden by default) -->
+            <div class="mobile-menu">
+                <nav>
+                    <ul class="mobile-main-links">
+                        <li><a href="/using">Using the Library</a></li>
+                        <li><a href="/tech">Technology & Research</a></li>
+                        <li><a href="/programs">Programs</a></li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/contact">Contact Us</a></li>
+                        <li><a href="/catalog">Catalog</a></li>
+                        <li><a href="/hours">Hours</a></li>
+                    </ul>
+                    <div class="mobile-audience">
+                        <ul>
+                            <li><a href="/kids">Kids</a></li>
+                            <li><a href="/teens">Teens</a></li>
+                            <li><a href="/adults">Adults</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="nav-border">
+            <img src="/assets/chpl-redesign/navbar-border.png" alt="Ombre navbar border" class="nav-border-image">
+        </div>
+
+        <!-- Mobile Search Bar (below border) -->
+        <div class="mobile-search-container">
+            <div class="catalog-dropdown">
+                <span>Catalog</span>
+            </div>
+            <div class="search-form">
+                <input type="text" placeholder="Search for books, movies, etc." aria-label="Search">
+                <button type="submit" class="search-button">Search</button>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Register online for a library card!</h1>
+            <a href="#" class="find-out-more-button">Find out more</a>
+        </div>
+
+        <div class="hours-info">
+            <h2 class="hours-title">Today's Hours:</h2>
+            <p class="hours-text">9:30 AM - 9:00 PM</p>
+            <p class="closure-notice">The library will be closed on March 23rd in observance of Memorial Day.</p>
+        </div>
+    </section>
+
+    <!-- Quick Links Section -->
+    <section class="section">
+        <div class="section-header">
+            <h2 class="section-title">Quick Links</h2>
+        </div>
+
+        <div class="links-grid">
+            <a href="#" class="link-card">
+                <div class="link-card-content">
+                    <img src="/assets/chpl-redesign/card-icon.png" alt="library card icon" class="link-card-icon">
+                    <p class="link-card-text">Get a Library Card</p>
+                </div>
+            </a>
+            <a href="#" class="link-card">
+                <div class="link-card-content">
+                    <img src="/assets/chpl-redesign/digital-icon.png" alt="digital media icon" class="link-card-icon">
+                    <p class="link-card-text">Digital Collection</p>
+                </div>
+            </a>
+            <a href="#" class="link-card">
+                <div class="link-card-content">
+                    <img src="/assets/chpl-redesign/library-of-things-icon.png" alt="library of things icon"
+                        class="link-card-icon">
+                    <p class="link-card-text">Library of Things</p>
+                </div>
+            </a>
+            <a href="#" class="link-card">
+                <div class="link-card-content">
+                    <img src="/assets/chpl-redesign/calendar-icon.png" alt="calendar icon" class="link-card-icon">
+                    <p class="link-card-text">Program Calendar</p>
+                </div>
+            </a>
+            <a href="#" class="link-card">
+                <div class="link-card-content">
+                    <img src="/assets/chpl-redesign/research-icon.png" alt="search glass icon" class="link-card-icon">
+                    <p class="link-card-text">Research Resources</p>
+                </div>
+            </a>
+            <a href="#" class="link-card">
+                <div class="link-card-content">
+                    <img src="/assets/chpl-redesign/feedback-icon.png" alt="feedback icon" class="link-card-icon">
+                    <p class="link-card-text">Give Feedback</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Trending Now Section -->
+    <section class="trending-section">
+        <div class="section-header">
+            <h2 class="section-title">Trending Now</h2>
+            <a href="#" class="section-header-button">See all news</a>
+        </div>
+
+        <div class="trending-content">
+            <div class="trending-card">
+                <div class="card-image">
+                    <img src="/assets/chpl-redesign/magazine-giveaway.png" alt="Stack of magazines">
+                </div>
+                <div class="card-content">
+                    <h3>March Magazine Giveaway</h3>
+                    <p>We're spring cleaning! 2023 issues of selected magazines are available on a first-come,
+                        first-served basis. Here is a list of titles available as of 3/5/25. Please come to the library
+                        to inquire about any titles you're interested in getting.</p>
+                </div>
+            </div>
+
+            <div class="trending-card">
+                <div class="card-image">
+                    <img src="/assets/chpl-redesign/chpl-recommends.png"
+                        alt="Clarendon Hills Public Library recommends tagline image">
+                </div>
+                <div class="card-content">
+                    <h3>Subscribe to CHPL Recommends!</h3>
+                    <p>Sign up to receive monthly reading recommendations—we'll email you monthly book lists of new
+                        titles that match your reading interests!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events Section -->
+    <section class="section">
+        <div class="section-header">
+            <h2 class="section-title">Upcoming Events</h2>
+            <a href="#" class="section-header-button">See all events</a>
+        </div>
+
+        <div class="events-carousel-container">
+            <button class="arrow-button prev">
+                <!-- <div class="arrow-button-icon-container"><img src="/assets/chpl-redesign/chevron-left.png"
+                        alt="Left arrow button"></div> -->
+                <p><</p>
+            </button>
+
+            <div class="events-carousel">
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="/assets/chpl-redesign/library-bookshelves.png" alt="Bookshelves">
+                    </div>
+                    <div class="event-text">
+                        <div class="event-category">Color-coded Category</div>
+                        <h3>Event Name</h3>
+                        <p>Date, Time | Location (optional)</p>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="/assets/chpl-redesign/preschool-art.png" alt="Child's hand painting abstract art">
+                    </div>
+                    <div class="event-text">
+                        <div class="event-category">Children's Programs</div>
+                        <h3>Preschool Art</h3>
+                        <p>March 21, 10:00-10:30 AM<br>CHPL Story Time Room</p>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="/assets/chpl-redesign/9-to-5.png" alt="Event movie poster">
+                    </div>
+                    <div class="event-text">
+                        <div class="event-category">Adult Program</div>
+                        <h3>9 to 5: The Story of a Movement</h3>
+                        <p>March 21 - 23 | Virtual Screening</p>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="/assets/chpl-redesign/lorem-ipsum.jpeg" alt="Lorem Ipsum">
+                    </div>
+                    <div class="event-text">
+                        <div class="event-category">Color-coded Category</div>
+                        <h3>Event Name</h3>
+                        <p>Date, Time | Location (optional)</p>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="/assets/chpl-redesign/lorem-ipsum.jpeg" alt="Lorem Ipsum">
+                    </div>
+                    <div class="event-text">
+                        <div class="event-category">Color-coded Category</div>
+                        <h3>Event Name</h3>
+                        <p>Date, Time | Location (optional)</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="arrow-button next">
+                <!-- <div class="arrow-button-icon-container"><img src="/assets/chpl-redesign/chevron-right.png"
+                        alt="Right arrow button"></div> -->
+                <p>></p>
+            </button>
+        </div>
+
+        <div class="carousel-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+
+    <!-- New Materials Section -->
+    <section class="section">
+        <div class="section-header">
+            <h2 class="section-title">New Materials</h2>
+            <a href="#" class="section-header-button">See all materials</a>
+        </div>
+
+        <div class="new-materials-content-container">
+            <!-- Category Buttons -->
+            <div class="category-buttons">
+                <button class="category-btn active" data-category="adult">New Adult</button>
+                <button class="category-btn" data-category="ya">New YA</button>
+                <button class="category-btn" data-category="kids">New Kids</button>
+            </div>
+
+            <!-- Materials Display -->
+            <div class="materials-display">
+                <!-- Adult materials (default visible) -->
+                <div class="material-category active" id="adult-materials">
+                    <div class="material-items">
+                        <div class="material-item">
+                            <img src="/assets/chpl-redesign/paris-express.png" alt="The Paris Express by Emma Donoghue"
+                                class="material-cover">
+                            <div class="material-type">Fiction</div>
+                        </div>
+                        <div class="material-item">
+                            <img src="/assets/chpl-redesign/korean-myths.png" alt="The Korean Myths"
+                                class="material-cover">
+                            <div class="material-type">Non-Fiction</div>
+                        </div>
+                        <div class="material-item">
+                            <img src="/assets/chpl-redesign/gladiator.png" alt="Gladiator II Movie Cover"
+                                class="material-cover">
+                            <div class="material-type">Movies</div>
+                        </div>
+                    </div>
+                    <!-- <button class="arrow-button next">
+                        <div class="arrow-button-icon-container"><img src="/assets/chpl-redesign/chevron-right.png"
+                                alt="carousel right arrow button"></div>
+                    </button> -->
+                </div>
+
+                <!-- YA materials (initially hidden) -->
+                <div class="material-category" id="ya-materials">
+                    <div class="material-items">
+                        <div class="material-item">
+                            <img src="/assets/chpl-redesign/lorem-ipsum.jpeg" alt="YA Fiction Book"
+                                class="material-cover">
+                            <div class="material-type">Fiction</div>
+                        </div>
+                        <div class="material-item">
+                            <img src="/assets/chpl-redesign/lorem-ipsum.jpeg" alt="YA Non-Fiction Book"
+                                class="material-cover">
+                            <div class="material-type">Non-Fiction</div>
+                        </div>
+                        <div class="material-item">
+                            <img src="/assets/chpl-redesign/lorem-ipsum.jpeg" alt="YA Movie" class="material-cover">
+                            <div class="material-type">Games</div>
+                        </div>
+                    </div>
+                    <!-- <button class="arrow-button next">
+                        <div class="arrow-button-icon-container"><img src="/assets/chpl-redesign/chevron-right.png"
+                                alt="carousel right arrow button"></div>
+                    </button> -->
+                </div>
+
+                <!-- Kids materials (initially hidden) -->
+                <div class="material-category" id="kids-materials">
+                    <div class="material-items">
+                        <div class="material-item">
+                            <img src="/assets/chpl-redesign/lorem-ipsum.jpeg" alt="Kids Picture Book"
+                                class="material-cover">
+                            <div class="material-type">Picture Books</div>
+                        </div>
+                        <div class="material-item">
+                            <img src="/assets/chpl-redesign/lorem-ipsum.jpeg" alt="Kids Chapter Book"
+                                class="material-cover">
+                            <div class="material-type">Chapter Books</div>
+                        </div>
+                        <div class="material-item">
+                            <img src="/assets/chpl-redesign/lorem-ipsum.jpeg" alt="Kids Non-Fiction Book"
+                                class="material-cover">
+                            <div class="material-type">Non-Fiction</div>
+                        </div>
+                    </div>
+                    <!-- <button class="arrow-button next">
+                        <div class="arrow-button-icon-container"><img src="/assets/chpl-redesign/chevron-right.png"
+                                alt="carousel right arrow button"></div>
+                    </button> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+    <!-- Footer -->
+    <div class="footer-border">
+        <img src="/assets/chpl-redesign/navbar-border.png" alt="Ombre navbar border" class="footer-border-image">
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Logo & address -->
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <img src="/assets/chpl-redesign/chpl-logo-1.png" alt="Clarendon Hills Public Library Logo"
+                        class="logo">
+                </div>
+                <div class="footer-address">
+                    <p>7 North Prospect Avenue,</p>
+                    <p>Clarendon Hills, IL 60514</p>
+                    <p>Phone: 630.323.8188</p>
+                    <p>Fax: 630.323.8189</p>
+                </div>
+            </div>
+
+            <!-- Feedback form & nav links -->
+            <div class="footer-right">
+                <div class="feedback-form">
+                    <input type="text" placeholder="Give us your feedback!">
+                    <button type="submit">Submit</button>
+                </div>
+
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="#">Get a Library Card</a></li>
+                        <li><a href="#">Support Your Library</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+
+        <!-- Social icons -->
+        <div class="social-icons">
+            <div class="social-icon">
+                <img src="/assets/chpl-redesign/fb-icon.png" alt="Facebook icon">
+            </div>
+            <div class="social-icon">
+                <img src="/assets/chpl-redesign/instagram-icon.png" alt="Instagram icon">
+            </div>
+            <div class="social-icon">
+                <img src="/assets/chpl-redesign/youtube-icon.png" alt="Youtube icon">
+            </div>
+            <div class="social-icon">
+                <img src="/assets/chpl-redesign/x-icon.png" alt="X icon">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
