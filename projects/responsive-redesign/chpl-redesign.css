@@ -971,7 +971,7 @@ header {
 /* Small screens: 1 card */
 @media (max-width: 700px) {
     .events-carousel-container {
-        max-width: 300px; 
+        max-width: 360px; 
     }
 }
 
